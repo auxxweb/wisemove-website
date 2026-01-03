@@ -3311,19 +3311,24 @@ Preloader
   z-index: 9999;
   background-color: #1f1f24;
 }
+
+
 #preloader .loader-cover .loader-container {
   position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
+  
 }
+
 #preloader .loader-cover .loader-container .loader-icon {
   width: 30px;
   aspect-ratio: 1.154;
   position: relative;
-  background: conic-gradient(from 120deg at 50% 64%, rgba(0, 0, 0, 0), #62a92b 1deg 120deg, rgba(0, 0, 0, 0) 121deg);
+  background: conic-gradient(from 120deg at 50% 64%, rgba(0, 0, 0, 0), #6e4ef2 1deg 120deg, rgba(0, 0, 0, 0) 121deg);
   animation: l27-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
 }
 #preloader .loader-cover .loader-container .loader-icon:before,

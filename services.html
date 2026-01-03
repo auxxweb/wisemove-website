@@ -7,7 +7,7 @@
 <title>William - Services</title>
 <script src="assets/js/vendors/color-modes.js"></script>
 <!-- Favicon icon-->
-<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+<link rel="shortcut icon" type="image/x-icon" href="assets/Images/logo (1).svg" />
 <!-- Libs CSS -->
 <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
@@ -29,16 +29,74 @@
     <body>
         <!-- prettier-ignore -->
         <!--Preloader-->
-<div id="preloader">
-    <div class="loader-cover">
-        <div class="loader-container">
+<div id="preloader" style="
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f24;
+    z-index: 9999;
+">
+    <div class="loader-cover" style="
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    ">
+        <div class="loader-container" style="
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        ">
             <div class="loader-icon"></div>
         </div>
     </div>
 </div>
-<!--Preloader-end -->
 
-        <!-- Navbar -->
+<!--Preloader-end -->
+  <style>
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px;
+  right: 22px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 34px;
+  height: 34px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<a
+  href="https://wa.me/919995333560"
+  target="_blank"
+  class="whatsapp-float"
+  aria-label="Chat on WhatsApp"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp Chat"
+  />
+</a>
+         <!-- Navbar -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light w-100 flex-nowrap z-999 p-0">
         <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
@@ -46,36 +104,74 @@
         </a>
         <div class="container py-3 px-0">
             <a class="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="index.html">
-                <img src="assets/imgs/template/favicon.svg" alt="zelio" />
-                <span class="fs-4 ms-2">william.design</span>
+                <img src="assets/Images/Navlogo.svg" alt="wisemoveconsultancy" />
+                <!-- <span class="fs-4 ms-2">WISEMOVE </span> -->
             </a>
             <div class="d-none d-lg-flex"><div class="main-menu">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
         <li class="nav-item has-children">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="#">Study Destinations</a>
             <ul class="sub-menu">
-                <li><a href="index.html">Landing page</a></li>
-                <li><a href="index-1.html">Home 1 - Designer</a></li>
-                <li><a href="index-2.html">Home 2 - Developer</a></li>
-                <li><a href="index-3.html">Home 3 - Author</a></li>
+                <li><a href="destinations.html">Canada</a></li>
+                <li><a href="destinations.html">UK</a></li>
+                <li><a href="destinations.html">Germany</a></li>
+                <li><a href="destinations.html">Ireland</a></li>
+                  <li><a href="destinations.html">Australia</a></li>
+                    <li><a href="destinations.html">New Zealand</a></li>
+                      <li><a href="destinations.html">USA</a></li>
+                        <li><a href="destinations.html"><B>All Destinations (Hub) </B></a></li>
+
+            </ul>
+        </li>
+         <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Courses</a>
+            <ul class="sub-menu">
+                <li><a href="courses.html">Computer & IT</a></li>
+                <li><a href="courses.html">Business & Management</a></li>
+                <li><a href="courses.html">Engineering</a></li>
+                <li><a href="courses.html">Nursing & Healthcare</a></li>
+                  <li><a href="courses.html">Data/AI</a></li>
+                    <li><a href="courses.html">Hospitality</a></li>
+                      <li><a href="courses.html">Arts & Design</a></li>
+                        <li><a href="courses.html"><B>All Courses (hub) </B></a></li>
+
+            </ul>
+        </li>
+        <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Services</a>
+            <ul class="sub-menu">
+                <li><a href="services.html">Profile Evaluation</a></li>
+                <li><a href="services.html">Course & University Shortlisting</a></li>
+                <li><a href="services.html">SOP/LOR/Application Support</a></li>
+                <li><a href="services.html">Scholarships Guidance</a></li>
+                  <li><a href="services.html">Visa Guidance</a></li>
+                    <li><a href="services.html">Pre-Departure Briefing</a></li>
+                      <li><a href="services.html">Travel & Post-Arrival Support</a></li>
+                        <li><a href="services.html"><B>All Services (hub) </B></a></li>
+
             </ul>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="work.html">Portfolio</a>
-        </li>
-
-        <li class="nav-item  has-children">
-            <a class="nav-link" href="#">Pages</a>
+        <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Test Prep</a>
             <ul class="sub-menu">
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="coming-soon.html">Coming Soon</a></li>
-                <li><a href="404.html">404</a></li>
+                <li><a href="testprep.html">IELTS</a></li>
+                <li><a href="testprep.html">PTE</a></li>
+                <li><a href="testprep.html">Duolingo</a></li>
+              
+
             </ul>
         </li>
+
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Success Stories</a>
+        </li>
+
+        
 
         <li class="nav-item">
             <a class="nav-link" href="blog-list.html">Blog</a>
@@ -88,17 +184,17 @@
 </div>
             <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
                 <div class="d-md-flex d-none gap-3">
-                    <a href="http://facebook.com">
+                    <a href="https://facebook.com">
                         <i class="ri-facebook-circle-fill fs-18"></i>
                     </a>
-                    <a href="http://twitter.com">
+                    <a href="https://twitter.com">
                         <i class="ri-twitter-x-fill fs-18"></i>
                     </a>
-                    <a href="http://linkedin.com">
+                    <a href="https://linkedin.com">
                         <i class="ri-linkedin-fill fs-18"></i>
                     </a>
-                    <a href="http://github.com">
-                        <i class="ri-github-fill fs-18"></i>
+                    <a href="https://instagram.com">
+                       <i class="ri-instagram-line fs-18"></i>
                     </a>
                 </div>
                 <div class="burger-icon burger-icon-white border rounded-3">
@@ -113,7 +209,11 @@
     <i class="ri-contrast-2-line text-white"></i>
 </div>
 
-    </nav>
+    </nav>  
+
+    <!-- navbar end -->
+
+    
     <!-- offCanvas-menu -->
 <div class="offCanvas__info">
     <div class="offCanvas__close-icon menu-close">
@@ -122,22 +222,19 @@
     <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
     <div class="offCanvas__side-info mb-30">
         <div class="contact-list mb-30">
-            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+            <p class="fs-6 fw-medium text-200 mb-5">Transparent guidance. Clear timelines. Step-by-step support.Best study Consultancy in kerala</p>
             <div class="mb-3">
                 <span class="text-400 fs-5">Phone Number</span>
-                <p class="mb-0">+1-234-567-8901</p>
+                <p class="mb-0">+91 9995333560</p>
             </div>
             <div class="mb-3">
                 <span class="text-400 fs-5">Email</span>
-                <p class="mb-0">contact@william.design</p>
+                <p class="mb-0">info@wisemoveconsultancy.com</p>
             </div>
-            <div class="mb-3">
-                <span class="text-400 fs-5">Skype</span>
-                <p class="mb-0">WilliamDesignUX</p>
-            </div>
+            
             <div class="mb-3">
                 <span class="text-400 fs-5">Address</span>
-                <p class="mb-0">0811 Erdman Prairie Road, Joaville, California 90210</p>
+                <p class="mb-0">1/287 D, Ashanpadi Kootayi Road, Paravanna, Malappuram, Tirur, Kerala, India, 676502.</p>
             </div>
         </div>
 
@@ -153,8 +250,8 @@
                 <a href="http://linkedin.com">
                     <i class="ri-linkedin-fill fs-18"></i>
                 </a>
-                <a href="http://github.com">
-                    <i class="ri-github-fill fs-18"></i>
+                <a href="http://instagram.com">
+                   <i class="ri-instagram-line fs-18"></i>
                 </a>
             </div>
         </div>
@@ -165,8 +262,8 @@
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-logo">
             <a class="d-flex main-logo align-items-center d-inline-flex" href="index.html">
-                <img src="assets/imgs/footer-1/logo.svg" alt="zelio" />
-                <span class="fs-4 ms-2 text-dark">william.design</span>
+                <img src="assets/Images/Navlogo.svg" alt="wisemoveconsultancy" />
+                <!-- <span class="fs-4 ms-2 text-dark">WiseMove Consultancy</span> -->
             </a>
             <div class="burger-icon burger-icon-white border rounded-3">
                 <span class="burger-icon-top"></span>
@@ -179,33 +276,76 @@
                 <div class="mobile-menu-wrap mobile-header-border">
                     <nav>
                         <ul class="mobile-menu font-heading ps-0">
-                            <li class="nav-item has-children">
-                                <a class="nav-link active" href="#">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Landing page</a></li>
-                                    <li><a href="index-1.html">Home 1 - Designer</a></li>
-                                    <li><a href="index-2.html">Home 2 - Developer</a></li>
-                                    <li><a href="index-3.html">Home 3 - Author</a></li>
-                                </ul>
-                            </li>
+                           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Study Destinations</a>
+            <ul class="sub-menu">
+                <li><a href="destinations.html">Canada</a></li>
+                <li><a href="destinations.html">UK</a></li>
+                <li><a href="destinations.html">Germany</a></li>
+                <li><a href="destinations.html">Ireland</a></li>
+                  <li><a href="destinations.html">Australia</a></li>
+                    <li><a href="destinations.html">New Zealand</a></li>
+                      <li><a href="destinations.html">USA</a></li>
+                        <li><a href="destinations.html"><B>All Destinations (Hub) </B></a></li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="work.html">Portfolio</a>
-                            </li>
+            </ul>
+        </li>
+         <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Courses</a>
+            <ul class="sub-menu">
+                <li><a href="courses.html">Computer & IT</a></li>
+                <li><a href="courses.html">Business & Management</a></li>
+                <li><a href="courses.html">Engineering</a></li>
+                <li><a href="courses.html">Nursing & Healthcare</a></li>
+                  <li><a href="courses.html">Data/AI</a></li>
+                    <li><a href="courses.html">Hospitality</a></li>
+                      <li><a href="courses.html">Arts & Design</a></li>
+                        <li><a href="courses.html"><B>All Courses (hub) </B></a></li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Pricing</a>
-                            </li>
+            </ul>
+        </li>
+        <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Services</a>
+            <ul class="sub-menu">
+                <li><a href="services.html">Profile Evaluation</a></li>
+                <li><a href="services.html">Course & University Shortlisting</a></li>
+                <li><a href="services.html">SOP/LOR/Application Support</a></li>
+                <li><a href="services.html">Scholarships Guidance</a></li>
+                  <li><a href="services.html">Visa Guidance</a></li>
+                    <li><a href="services.html">Pre-Departure Briefing</a></li>
+                      <li><a href="services.html">Travel & Post-Arrival Support</a></li>
+                        <li><a href="services.html"><B>All Services (hub) </B></a></li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog-list.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+            </ul>
+        </li>
+
+        <li class="nav-item has-children">
+            <a class="nav-link active" href="#">Test Prep</a>
+            <ul class="sub-menu">
+                <li><a href="testprep.html">IELTS</a></li>
+                <li><a href="testprep.html">PTE</a></li>
+                <li><a href="testprep.html">Duolingo</a></li>
+              
+
+            </ul>
+        </li>
+
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Success Stories</a>
+        </li>
+
+        
+
+        <li class="nav-item">
+            <a class="nav-link" href="blog-list.html">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
                         </ul>
                     </nav>
                 </div>
@@ -215,208 +355,274 @@
 </div>
 
 </header>
-
         <main>
             <!-- prettier-ignore -->
             <!-- services list -->
+<!-- Our Services -->
 <section class="section-service-list pt-120 pb-150">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-lg-auto">
                 <div class="text-center">
-                    <div class="btn btn-gradient d-inline-block text-uppercase">My Services</div>
+                    <div class="btn btn-gradient d-inline-block text-uppercase">Our Services</div>
                     <h3 class="ds-3 mt-3 mb-4 text-dark">
-                        Transforming Ideas
-                        <span class="text-300">into Intuitive Designs for</span>
-                        Engaging User
-                        <span class="text-300">Experiences</span>
+                        Complete Study Abroad
+                        <span class="text-300">Support from</span>
+                        Profile to Placement
                     </h3>
                     <p class="text-300 fs-5">
-                        With expertise in mobile app and web design, I transform ideas into visually <br />
-                        stunning and user-friendly interfaces that captivate and retain users. <br />
-                        Explore my work and see design in action.
+                        WiseMove provides transparent, structured, and student-first guidance
+                        <br />
+                        to help you make confident decisions at every stage of your journey.
                     </p>
                 </div>
+
                 <div class="card-scroll mt-8">
                     <div class="cards">
-                        <!--prettier-ignore-->
+
+                        <!-- Profile Evaluation -->
                         <div class="card-custom" data-index="0">
-    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
-        <div class="card__title d-flex align-items-center mb-md-4 mb-3">
-            <a href="#" class="card_title_link">
-                <h3 class="fw-semibold mb-2">UI/UX Design</h3>
-                <p class="mb-0">Creative. Unique. Reality.</p>
-            </a>
-            <a href="#" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-        </div>
-        <div class="card__image-container zoom-img position-relative">
-            <img class="card__image" src="assets/imgs/services-list/img-1.png" alt="zelio" />
-            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
-        </div>
-        <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">User Research</p>
-                <p class="card__description text-300 fs-6 mb-0">Conducting thorough user research through surveys, interviews, and usability studies to understand target audiences and their needs, ensuring designs are user-centric and effective.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Wireframing and Prototyping</p>
-                <p class="card__description text-300 fs-6 mb-0">Designing detailed wireframes and interactive prototypes to visualize and test user flows and interactions, allowing for early feedback and iterative improvements.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">User Testing</p>
-                <p class="card__description text-300 fs-6 mb-0">Implementing comprehensive user testing sessions to gather feedback, identify pain points, and make data-driven design improvements, ensuring a seamless user experience.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="card-custom" data-index="0">
-    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
-        <div class="card__title d-flex align-items-center mb-md-4 mb-3">
-            <a href="#" class="card_title_link">
-                <h3 class="fw-semibold mb-2">Mobile App Design</h3>
-                <p class="mb-0">Creative. Unique. Reality.</p>
-            </a>
-            <a href="#" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-        </div>
-        <div class="card__image-container zoom-img position-relative">
-            <img class="card__image" src="assets/imgs/services-list/img-2.png" alt="zelio" />
-            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
-        </div>
-        <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Cross-Platform Design</p>
-                <p class="card__description text-300 fs-6 mb-0">Creating designs that work smoothly on both iOS and Android platforms, ensuring a consistent and high-quality user experience regardless of the device.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Interactive Prototypes</p>
-                <p class="card__description text-300 fs-6 mb-0">Developing interactive prototypes to demonstrate app functionality allowing stakeholders to experience the app before development begins.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Consistent Branding</p>
-                <p class="card__description text-300 fs-6 mb-0">Ensuring the app design is consistent with your brand’s identity and aesthetics, maintaining brand recognition and trust across all touchpoints.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="card-custom" data-index="0">
-    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
-        <div class="card__title d-flex align-items-center mb-md-4 mb-3">
-            <a href="#" class="card_title_link">
-                <h3 class="fw-semibold mb-2">Brand Identity Design</h3>
-                <p class="mb-0">Creative. Unique. Reality.</p>
-            </a>
-            <a href="#" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-        </div>
-        <div class="card__image-container zoom-img position-relative">
-            <img class="card__image" src="assets/imgs/services-list/img-3.png" alt="zelio" />
-            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
-        </div>
-        <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Logo Design</p>
-                <p class="card__description text-300 fs-6 mb-0">Creating memorable and impactful logos that represent your brand’s essence and values, helping you stand out in a crowded marketplace.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Brand Guidelines</p>
-                <p class="card__description text-300 fs-6 mb-0">Developing comprehensive brand guidelines that include typography, color visual styles to maintain consistency across all platforms and media.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Visual Assets:</p>
-                <p class="card__description text-300 fs-6 mb-0">Designing a variety of visual assets, including business cards, letterheads, to ensure all brand communications are professional and cohesive.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="card-custom" data-index="0">
-    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
-        <div class="card__title d-flex align-items-center mb-md-4 mb-3">
-            <a href="#" class="card_title_link">
-                <h3 class="fw-semibold mb-2">Web Development</h3>
-                <p class="mb-0">Creative. Unique. Reality.</p>
-            </a>
-            <a href="#" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-        </div>
-        <div class="card__image-container zoom-img position-relative">
-            <img class="card__image" src="assets/imgs/services-list/img-4.png" alt="zelio" />
-            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
-        </div>
-        <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Front-End Development</p>
-                <p class="card__description text-300 fs-6 mb-0">Utilizing modern technologies like HTML, CSS, and JavaScript to create responsive and interactive web pages that provide an engaging user experience.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Back-End Development</p>
-                <p class="card__description text-300 fs-6 mb-0">Implementing server-side logic and database management with technologies such as Node.js, Python, or Ruby on Rails to ensure seamless performance and data integrity.</p>
-            </div>
-            <div class="d-md-flex content">
-                <p class="fs-7 text-dark text-uppercase w-md-40 pe-8 mb-2 d-inline-block">Content Management Systems</p>
-                <p class="card__description text-300 fs-6 mb-0">Integrating user-friendly CMS platforms like WordPress, Drupal, or custom solutions for easy content updates, allowing non-technical users to manage website content efficiently.</p>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">Profile Evaluation</h3>
+                                        <p class="mb-0">Know where you truly stand</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+                                         alt="Profile evaluation counselling" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        We analyse your academic background, work experience,
+                                        budget, and career goals to identify realistic study options.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course & University Shortlisting -->
+                        <div class="card-custom" data-index="1">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">Course & University Shortlisting</h3>
+                                        <p class="mb-0">Right course. Right country.</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://www.edwiseinternational.com/blogs/img/choosing-the-right-university-to-study-abroad-in-Europe-1.webp"
+                                         alt="University shortlisting" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        We shortlist universities based on eligibility,
+                                        acceptance ratio, career outcomes, and future visa prospects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SOP / LOR / Application -->
+                        <div class="card-custom" data-index="2">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">SOP / LOR / Application Support</h3>
+                                        <p class="mb-0">Strong applications, real stories</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://images.unsplash.com/photo-1455390582262-044cdead277a"
+                                         alt="SOP and application support" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        We help craft authentic SOPs, guide LORs,
+                                        and manage accurate university applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Scholarships Guidance -->
+                        <div class="card-custom" data-index="3">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">Scholarships Guidance</h3>
+                                        <p class="mb-0">Reduce your financial burden</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://swastikinternational.co.in/images/blog/blog005.jpg"
+                                         alt="Scholarship guidance" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        Guidance on merit-based, need-based,
+                                        and country-specific scholarships and funding options.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visa Guidance -->
+                        <div class="card-custom" data-index="4">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">Visa Guidance</h3>
+                                        <p class="mb-0">Confidence for your visa interview</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://visadone.com/wp-content/uploads/2023/09/visa-application-form.jpg"
+                                         alt="Student visa guidance" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        End-to-end visa documentation support,
+                                        interview preparation, and checklist compliance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Departure & Post Arrival -->
+                        <div class="card-custom" data-index="5">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="#" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">Pre-Departure & Post-Arrival Support</h3>
+                                        <p class="mb-0">Smooth transition abroad</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+                                         alt="Student travel support" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        Pre-departure briefings, travel guidance,
+                                        accommodation tips, and post-arrival assistance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- All Services Hub -->
+                        <div class="card-custom" data-index="6">
+                            <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4">
+                                <div class="card__title d-flex align-items-center mb-md-4 mb-3">
+                                    <a href="services.html" class="card_title_link">
+                                        <h3 class="fw-semibold mb-2">All Services (Hub)</h3>
+                                        <p class="mb-0">Everything under one roof</p>
+                                    </a>
+                                    <a href="services.html" class="card-icon border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </a>
+                                </div>
+                                <div class="card__image-container zoom-img position-relative">
+                                    <img class="card__image"
+                                         src="https://www.startupclubindia.com/public/images/products/1742024898-strategy-consulting.jpg"
+                                         alt="Complete study abroad services" />
+                                    <a href="services.html" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                                </div>
+                                <div class="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
+                                    <p class="card__description text-300 fs-6 mb-0">
+                                        A single trusted platform for counselling,
+                                        applications, visas, travel, and ongoing student support.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
 
+
             <!--Static 1-->
-<div class="section-static-1 position-relative overflow-hidden z-0 py-8 bg-6">
+<div class="section-static-1 position-relative overflow-hidden z-0 py-8 bg-900">
     <div class="container">
         <div class="inner">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-auto col-md-6">
                     <div class="counter-item-cover counter-item">
                         <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="2"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Years of</p>
+                                <p class="fs-5 mb-0 fw-bold">Guidance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="2500"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Student Profiles</p>
+                                <p class="fs-5 mb-0 fw-bold">Reviewed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
+                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="1238"></span></span>
+                            <div class="text-start ms-2">
+                                <p class="fs-5 mb-0 text-300">Students</p>
+                                <p class="fs-5 mb-0 fw-bold">Counselled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-md-6">
+                    <div class="counter-item-cover counter-item">
+                        <div class="content text-center mx-auto d-flex align-items-center">
                             <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="12"></span></span>
                             <div class="text-start ms-2">
-                                <p class="fs-5 mb-0 text-300">Year of</p>
-                                <p class="fs-5 mb-0 fw-bold">Experience</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-auto col-md-6">
-                    <div class="counter-item-cover counter-item">
-                        <div class="content text-center mx-auto d-flex align-items-center">
-                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="250"></span></span>
-                            <div class="text-start ms-2">
-                                <p class="fs-5 mb-0 text-300">Projects</p>
-                                <p class="fs-5 mb-0 fw-bold">Completed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-auto col-md-6">
-                    <div class="counter-item-cover counter-item">
-                        <div class="content text-center mx-auto d-flex align-items-center">
-                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="680"></span></span>
-                            <div class="text-start ms-2">
-                                <p class="fs-5 mb-0 text-300">Satisfied</p>
-                                <p class="fs-5 mb-0 fw-bold">Happy Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-auto col-md-6">
-                    <div class="counter-item-cover counter-item">
-                        <div class="content text-center mx-auto d-flex align-items-center">
-                            <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="18"></span></span>
-                            <div class="text-start ms-2">
-                                <p class="fs-5 mb-0 text-300">Awards</p>
-                                <p class="fs-5 mb-0 fw-bold">Won Received</p>
+                                <p class="fs-5 mb-0 text-300">Study</p>
+                                <p class="fs-5 mb-0 fw-bold">Destinations</p>
                             </div>
                         </div>
                     </div>
@@ -430,11 +636,11 @@
 <section id="contact" class="section-contact-1 bg-900 position-relative pt-150 pb-lg-250 pb-150 overflow-hidden">
     <div class="container position-relative z-1">
         <h3 class="ds-3 mt-3 mb-3 text-primary">Get in touch</h3>
-        <span class="fs-5 fw-medium text-200">
-            I'm always excited to take on new projects and collaborate with innovative minds. If you
-            <br />
-            have a project in mind or just want to chat about design, feel free to reach out!
-        </span>
+       <span class="fs-5 fw-medium text-200">
+    Get in touch with our experts for personalised study abroad counselling.
+    <br />
+    We’re here to guide you at every step of your global education journey.
+</span>
         <div class="row mt-8">
             <div class="col-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
@@ -443,7 +649,7 @@
                     </div>
                     <div class="ps-3">
                         <span class="text-400 fs-5">Phone Number</span>
-                        <h6 class="mb-0">+1-234-567-8901</h6>
+                        <h6 class="mb-0">+91 9995333560</h6>
                     </div>
                     <a href="tel:+1-234-567-8901" class="position-absolute top-0 start-0 w-100 h-100"></a>
                 </div>
@@ -453,11 +659,11 @@
                     </div>
                     <div class="ps-3">
                         <span class="text-400 fs-5">Email</span>
-                        <h6 class="mb-0">contact@william.design</h6>
+                        <h6 class="mb-0">info@wisemoveconsultancy.com</h6>
                     </div>
                     <a href="mailto:someone@example.com" class="position-absolute top-0 start-0 w-100 h-100"></a>
                 </div>
-                <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
+                <!-- <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
                     <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
                         <i class="ri-skype-fill text-primary fs-26"></i>
                     </div>
@@ -466,14 +672,14 @@
                         <h6 class="mb-0">WilliamDesignUX</h6>
                     </div>
                     <a href="skype:SKYPENAME?add" class="position-absolute top-0 start-0 w-100 h-100"></a>
-                </div>
+                </div> -->
                 <div class="d-flex align-items-center mb-4 position-relative d-inline-flex">
                     <div class="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
                         <i class="ri-map-2-fill text-primary fs-26"></i>
                     </div>
                     <div class="ps-3">
                         <span class="text-400 fs-5">Address</span>
-                        <h6 class="mb-0">0811 Erdman Prairie, Joaville CA</h6>
+                        <h6 class="mb-0">1/287 D, Ashanpadi Kootayi Road, Paravanna, Malappuram, Tirur, Kerala, India, 676502.</h6>
                     </div>
                     <a href="https://maps.google.com/maps?q=1st+avenue,New+York" class="position-absolute top-0 start-0 w-100 h-100"></a>
                 </div>
@@ -482,7 +688,7 @@
                 <div class="position-relative">
                     <div class="position-relative z-2">
                         <h3>Leave a messge</h3>
-                        <form action="#">
+                       <form action="https://script.google.com/macros/s/AKfycbz4BNw6w2UsNK5WMHmziY22HJi0S-qUrv1HH14sPUNlZGFudlIp5_7fZ6fGWLvGECsM/exec" method="POST">
                             <div class="row mt-3">
                                 <div class="col-md-6 ">
                                     <label class="mb-1 mt-3 text-dark" for="name">Your name <span class="text-primary">*</span></label>
@@ -520,50 +726,54 @@
     </div>
     <div class="scroll-move-right position-absolute bottom-0 start-50 translate-middle-x bg-900 overflow-hidden">
         <div class="wow img-custom-anim-top">
-            <h3 class="stroke fs-280 text-lowercase text-900 mb-0 lh-1">william.design</h3>
+            <h3 class="stroke fs-280 text-lowercase text-900 mb-0 lh-1">WISEMOVE</h3>
         </div>
     </div>
 </section>
 
+
         </main>
         <!-- prettier-ignore -->
-        <!-- Footer -->
+         <!-- Footer -->
 <footer>
     <div class="section-footer position-relative pt-60 pb-60 bg-secondary-1">
         <div class="container position-relative z-1">
             <div class="text-center">
                 <a class="d-flex main-logo align-items-center d-inline-flex" href="index.html">
-                    <img src="assets/imgs/footer-1/logo.svg" alt="zelio" />
-                    <span class="fs-4 ms-2 text-white-keep">william.design</span>
+                    <img src="assets/Images/footer logo.svg" alt="wisemoveconsultancy" />
+                    <!-- <span class="fs-4 ms-2 text-white-keep">WiseMove Consultancy</span> -->
                 </a>
                 <div class="navigation d-none d-md-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
-                    <a href="index.html" class="fs-5">
-                        Home
+                    <a href="about.html" class="fs-5">
+                       About Wise Move
                     </a>                   
-                    <a href="services.html" class="fs-5">
-                        Services
+                    <a href="ourteam.html" class="fs-5">
+                       Our Team
                     </a>
-                    <a href="work.html" class="fs-5">
-                        Portfolio
+                    <a href="careers.html" class="fs-5">
+                        Careers
                     </a>
-                    <a href="pricing.html" class="fs-5">
-                        Pricing
+                    <a href="privacypolicy.html" class="fs-5">
+                       Privacy Policy
                     </a>
-                    <a href="blog-list.html" class="fs-5">
-                        Blog
+                    <a href="terms&conditions.html" class="fs-5">
+                       Terms & Conditions
                     </a>
-                    <a href="#contact" class="fs-5">
-                        Contact
+                    <a href="disclaimer.html" class="fs-5">
+                      Disclaimer
                     </a>
+                   
                 </div>
             </div>
             <div class="row text-center py-4">
-                <span class="fs-6 text-white-keep">© 2024 All Rights Reserved by <span><a href="#" class="text-primary">William.design</a></span>
+                <span class="fs-6 text-white-keep">© 2026 All Rights Reserved by <span><a href="#" class="text-primary">WiseMove Consultancy</a></span>
             </div>
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 z-0" data-background="assets/imgs/footer-1/background.png "></div>
     </div>
-</footer>
+</footer> 
+
+<!-- footer end -->
         <!-- Scroll top -->
 <div class="btn-scroll-top @@style">
     <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
@@ -571,6 +781,26 @@
     </svg>
 </div>
 
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    fetch(this.action, {
+        method: "POST",
+        body: new FormData(this)
+    })
+    .then(() => {
+        alert("Thank you! Your details have been submitted.");
+        window.location.reload()
+    })
+    .catch(() => {
+        alert("Thank you! Your details have been submitted.");
+        window.location.reload()
+    });
+});
+</script>
+<!-- form cript ends -->
         <!-- Libs JS -->
 <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
 <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
