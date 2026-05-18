@@ -1,0 +1,69 @@
+/* WiseMove site overrides — contact visibility, map, performance */
+
+/* Keep contact content above decorative "WISEMOVE" strip */
+.section-contact-1 .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-contact-1 .scroll-move-right {
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Contact section: labels + values readable on bg-900 in dark AND light mode */
+.section-contact-1 .col-lg-4 .ps-3 .text-400,
+.section-contact-1 .col-lg-4 .ps-3 > span.text-400 {
+  color: var(--tc-neutral-300) !important;
+}
+
+.section-contact-1 .col-lg-4 .ps-3 h6.mb-0,
+.section-contact-1 .col-lg-4 .contact-address,
+.section-contact-1 .col-lg-4 .contact-value {
+  color: var(--tc-neutral-0) !important;
+}
+
+.section-contact-1 .col-lg-4 .ps-3 a.contact-value {
+  text-decoration: none;
+}
+
+.section-contact-1 .col-lg-4 .ps-3 a.contact-value:hover {
+  color: var(--tc-theme-primary-1) !important;
+}
+
+/* Offcanvas menu — phone, email, address */
+.offCanvas__info .contact-list .mb-3 > p.mb-0,
+.offCanvas__info .offcanvas-address,
+.offCanvas__info .offcanvas-contact-value {
+  color: var(--tc-neutral-0) !important;
+}
+
+.offCanvas__info .contact-list .text-400 {
+  color: var(--tc-neutral-300) !important;
+}
+
+.contact-map {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  background: var(--tc-neutral-100);
+  border: 1px solid var(--tc-neutral-300);
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 280px;
+  min-height: 280px;
+}
+
+@media (min-width: 992px) {
+  .contact-map iframe {
+    height: 320px;
+    min-height: 320px;
+  }
+}
+
+#preloader {
+  background-color: var(--tc-neutral-1000, #1f1f24) !important;
+}

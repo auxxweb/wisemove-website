@@ -1,0 +1,17 @@
+/* Faster hub pages — minimal blocking UI */
+
+#preloader {
+  transition: opacity 0.2s ease !important;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.card__image-container {
+  min-height: 200px;
+  background: var(--tc-neutral-100);
+}
