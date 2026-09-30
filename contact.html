@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
+<head><script id="wm-form-bridge">document.addEventListener("submit",function(event){var form=event.target;if(!form||String(form.tagName).toLowerCase()!=="form"||form.getAttribute("data-wm-form")!=="1")return;event.preventDefault();event.stopImmediatePropagation();HTMLFormElement.prototype.submit.call(form);},true);</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | WiseMove Consultancy</title>
@@ -188,7 +188,7 @@
     <h2 id="contactModalTitle">Let's build your next product.</h2>
     <p>Tell us what you're building and we'll come back with next steps and a clear estimate.</p>
     <a class="modal-mail" href="mailto:info@wisemoveconsultancy.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/><path d="m3.4 6.8 8.6 6 8.6-6"/></svg> info@wisemoveconsultancy.com</a>
-    <form data-enquiry-form novalidate>
+    <form method="post" action="http://localhost:4000/api/websites/6abcdd32bc6dc4725a56977d/enquiries" data-enquiry-form novalidate data-wm-form="1">
       <div class="field-row">
         <div class="field">
           <label for="m-name">Name</label>
